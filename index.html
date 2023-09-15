@@ -27,29 +27,23 @@
 <body>
 
     <!-- header section -->
-    <header class="header">
-        <!-- nav -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-				<div class="d-flex py-3 mb-4">
-					<div class="header">
-                    <!--logo -->
-						<a href="index.html" class="navbar-brand" id="logo">Learnest</a>
+    <header class="header p-4 text-white" id="myHeader">
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<h4 class="text-primary fw-bold"><i class="fa fa-circle"></i>&nbsp;Learnest</h4>
 
-					</div>
-					<div>
-						<ul class="nav navbar-nav navbar-right">
-                        <li><a href="#contact" class="discover-btn">Get Started</a></li>
-                       
-						</ul>
-					</div>
-                </div>                    
-            </div>
-    	
-        </nav>
-    	<!--end nav -->
-        
-    </header>
+				<div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+				</div>
+
+				<div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+				</div>
+
+				<div class="text-end">
+				  <button type="button" class="btn btn-primary px-4">Login</button>
+				</div>
+			</div>
+		</div>
+	</header>
     <!--end header -->
 
     <!-- banner section -->
@@ -61,8 +55,8 @@
 				<div class="row justify-content-center">
 					<div class="col-xl-6 col-lg-8 text-center">
 						<h1>Learn online through self-paced courses anywhere, anytime</h1>
-						<p>Learn online through self-paced courses anywhere, anytime</p>
-						<a href="#" class="btn btn-lg btn-blue">Sign up For Free</a>
+						<p class="mt-4">Learn online through self-paced courses anywhere, anytime</p>
+						<a href="#" class="btn btn-lg btn-primary">Sign up For Free</a>
 					</div>
 				</div>
 				<!--end row -->
@@ -224,9 +218,7 @@
       <div class="row mt-3">
 		   <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h4 class="text-primary fw-bold mb-4">
-          Learnest
-          </h4>
+          <h4 class="text-primary fw-bold mb-4"><i class="fa fa-circle"></i>&nbsp;Learnest</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat.
 			Donec placerat nisl magna, et faucibus arcu condimentum sed.
@@ -238,19 +230,19 @@
             Course Categories
           </h6>
           <p>
-            <a href="#!" class="text-reset">Mobile Apps Development</a>
+            <a href="#" class="text-reset">Mobile Apps Development</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Programming Languages</a>
+            <a href="#" class="text-reset">Programming Languages</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Databases</a>
+            <a href="#" class="text-reset">Databases</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Software Testing</a>
+            <a href="#" class="text-reset">Software Testing</a>
           </p>
 		  <p>
-            <a href="#!" class="text-reset">Software Engineering</a>
+            <a href="#" class="text-reset">Software Engineering</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -262,16 +254,16 @@
            For Institutes
           </h6>
           <p>
-            <a href="#!" class="text-reset">Institute Sign Up</a>
+            <a href="#" class="text-reset">Institute Sign Up</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Institute Sign In</a>
+            <a href="#" class="text-reset">Institute Sign In</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Send a Request</a>
+            <a href="#" class="text-reset">Send a Request</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Contact for Queries</a>
+            <a href="#" class="text-reset">Contact for Queries</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -308,9 +300,9 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <section class="section-footer-copyright bg-light p-4">
+  <section class="section-white bg-light">
 	<div class="container">
-		<div class="px-3 py-2">
+		<div class="col-md-12 py-3">
 		  <a href="" class="me-4 text-reset">
 		   Privacy Policy 
 		  </a>
@@ -321,18 +313,34 @@
 		   Return and Refunds
 		  </a>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 pb-2">
   
-			<p class="py-2">© 2019 Copyright Learnest. All Rights Reserved.</p>
+			<p>© 2019 Copyright Learnest. All Rights Reserved.</p>
 		</div>
-		<div class="col-md-6">
-			<p class="py-2 text-end">Learnest ™ is a registered trademark of ABC PVT LTD</p>
+		<div class="col-md-6 pb-2">
+			<p class="text-end">Learnest<sup>TM</sup> is a registered trademark of ABC PVT LTD</p>
 		</div>
 	</div>
   </section>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-   
+ 
+ 
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+ 
 </body>
 </html>
